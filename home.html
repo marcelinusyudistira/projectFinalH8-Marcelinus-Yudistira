@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="offset-1 col-3">
+                        <a class="navbar-brand d-flex" href="#">
+                            <img src="https://picsum.photos/seed/picsum/40/80" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                            <h5 class="ms-2">Marcel Music School</h5>
+                        </a>
+                    </div>
+                    <div class="col-md-7 col-sm-3">
+                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactUs.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutUs.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portofolio.html">Portofolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="todos.html">Todos</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="offset-1"></div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Caroussel -->
+        <div class="row mb-5">
+            <div class="container-fluid">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://picsum.photos/1200/400" class="d-block w-100" height="510px" alt="...">
+                            <div class="carousel-caption">
+                                <h3>"Musik Anywhere, Joyfull World"</h3>
+                                <h3>Bersama Kami, Menjadi Musisi Profesional</h3>
+                                <p>Some representative placeholder content for the first slide.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/1200/402" class="d-block w-100" height="510px" alt="...">
+                            <div class="carousel-caption">
+                                <h3>"Musik Anywhere, Joyfull World"</h3>
+                                <h3>Bersama Kami, Menjadi Musisi Profesional</h3>
+                                <p>Some representative placeholder content for the first slide.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/1200/403" class="d-block w-100" height="510px" alt="...">
+                            <div class="carousel-caption">
+                                <h3>"Musik Anywhere, Joyfull World"</h3>
+                                <h3>Bersama Kami, Menjadi Musisi Profesional</h3>
+                                <p>Some representative placeholder content for the first slide.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered w-100">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Price List Course</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">Nama Kelas</th>
+                            <th scope="col">Biaya</th>
+                            <th scope="col">Durasi</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Private Class</td>
+                                <td>Rp 500.000,00</td>
+                                <td>45 Menit x 5</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Hobby Class</td>
+                                <td>Rp 350.000,00</td>
+                                <td>45 Menit x 3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Online Class</td>
+                                <td>Rp 400.000,00</td>
+                                <td>45 Menit x 4</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Home Course</td>
+                                <td>Rp 600.000,00</td>
+                                <td>45 Menit x 5</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Music Producing Class</td>
+                                <td>Rp 550.000,00</td>
+                                <td>45 Menit x 5</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Purchase Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Text -->
+        <div class="row text-center justify-content-center mb-5">
+            <div class="col-7">
+                <h2>Musical Class</h2>
+                <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fuga repellat incidunt cum tenetur quam quas necessitatibus cupiditate. Illum voluptas ea tempore, minima sed laudantium quibusdam nihil provident porro est?</p>
+            </div>
+        </div>
+
+        <!-- Triple Card -->
+        <div class="row row-cols-md-4 g-4 tripleCard mb-5">
+            <div class="col">
+                <div class="card h-100">
+                <img src="https://picsum.photos/200/201" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Piano</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img src="https://picsum.photos/200/202" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Flute</h5>
+                    <p class="card-text">This is a short card.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img src="https://picsum.photos/200/203" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Guitar</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img src="https://picsum.photos/200/204" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Saxophone</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
+            </div>
+         
+        </div>
+
+        <!-- Text -->
+        <div class="row text-center justify-content-center mb-5">
+            <div class="col-7">
+                <h2>Lesson</h2>
+            </div>
+        </div>
+
+        <!-- Side Image -->
+        <div class="background mt-5">
+            <div class="row mb-5">
+                <div class="col-4 d-flex justify-content-end">
+                    <img src="https://picsum.photos/300/101" alt="">
+                </div>  
+                <div class="col-7">
+                    <div class="sideImage">
+                        <h3 class="text-sideImage">Private Class</h3>
+                        <p class="fs-6 text-sideImage">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet delectus est, officiis beatae dolorum dolores? Veritatis, id assumenda. Rem dolorem nihil qui itaque a iure ab consequatur accusamus dignissimos quia.
+                        Nihil tempora, labore omnis minus vel itaque aperiam facere dignissimos recusandae beatae quis optio ut esse quia dolorum autem reprehenderit. Rem aspernatur in voluptatibus enim minus? Consectetur quod at minima?</p>
+                    </div>
+                </div>
+                <div class="offset-1"></div>
+            </div>
+    
+            <div class="row mt-5">
+                <div class="offset-1 col-7 ">
+                    <div class="sideImage">
+                        <h3 class="text-sideImage">Home Class</h3>
+                        <p class="fs-6 text-sideImage">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet delectus est, officiis beatae dolorum dolores? Veritatis, id assumenda. Rem dolorem nihil qui itaque a iure ab consequatur accusamus dignissimos quia.
+                        Nihil tempora, labore omnis minus vel itaque aperiam facere dignissimos recusandae beatae quis optio ut esse quia dolorum autem reprehenderit. Rem aspernatur in voluptatibus enim minus? Consectetur quod at minima?</p>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-start">
+                    <img src="https://picsum.photos/300/103" alt="">
+                </div>  
+            </div>
+    
+            <div class="row mt-5">
+                <div class="col-4 d-flex justify-content-end">
+                    <img src="https://picsum.photos/300/102" alt="">
+                </div>  
+                <div class="col-7">
+                    <div class="sideImage">
+                        <h3 class="text-sideImage">Hobby Class</h3>
+                        <p class="fs-6 text-sideImage">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet delectus est, officiis beatae dolorum dolores? Veritatis, id assumenda. Rem dolorem nihil qui itaque a iure ab consequatur accusamus dignissimos quia.
+                        Nihil tempora, labore omnis minus vel itaque aperiam facere dignissimos recusandae beatae quis optio ut esse quia dolorum autem reprehenderit. Rem aspernatur in voluptatibus enim minus? Consectetur quod at minima?</p>
+                    </div>
+                </div>
+                <div class="offset-1"></div>
+            </div>
+        </div>
+
+        <!-- Text -->
+        <div class="row text-center justify-content-center mb-5 mt-5">
+            <div class="col-7">
+                <h2>Our Achivements</h2>
+                <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fuga repellat incidunt cum tenetur quam quas necessitatibus cupiditate. Illum voluptas ea tempore, minima sed laudantium quibusdam nihil provident porro est?</p>
+            </div>
+        </div>
+
+        <!-- Full-Image -->
+        <div class="fullImage mb-5">
+            <div class="row">
+                <div class="col-3 d-flex justify-content-center mb-3">
+                    <img class="" src="https://picsum.photos/250/201" alt="">
+                </div>
+                <div class="col-3 d-flex justify-content-center mb-3">
+                    <img src="https://picsum.photos/250/206" alt="">
+                </div>
+                <div class="col-3 d-flex justify-content-center mb-3">
+                    <img src="https://picsum.photos/250/207" alt="">
+                </div>
+                <div class="col-3 d-flex justify-content-center mb-3">
+                    <img src="https://picsum.photos/250/208" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 d-flex justify-content-center">
+                    <img src="https://picsum.photos/250/201" alt="">
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <img src="https://picsum.photos/250/202" alt="">
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <img src="https://picsum.photos/250/203" alt="">
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <img src="https://picsum.photos/250/204" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
+            <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                <img src="https://picsum.photos/seed/picsum/40/40" alt="">
+            </a>
+            <p class="text-sideImage">&copy; 2023</p>
+            </div>
+        
+            <div class="col mb-3">
+            </div>
+        
+            <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-sideImage">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-sideImage">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-sideImage">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-sideImage">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-sideImage">About</a></li>
+            </ul>
+            </div>
+        
+            <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-sideImage">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-sideImage">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-sideImage">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-sideImage">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-sideImage">About</a></li>
+            </ul>
+            </div>
+        
+            <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-sideImage">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-sideImage">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-sideImage">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-sideImage">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-sideImage">About</a></li>
+            </ul>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
